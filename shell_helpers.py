@@ -312,7 +312,8 @@ class ShellHelpers:
         extra_env=None,
         extra_paths=None,
         delete_env=None,
-        raise_on_failure=True,
+        # raise_on_failure=True,
+        raise_on_failure=False,
         *,
         out_str=None,
         stdin_path: Union[str,None] =None,
@@ -333,7 +334,7 @@ class ShellHelpers:
                           cmd_file gets appended to that list if given.
         :type cmd_files: List[str]
 
-        :param out_file: if not None, write the stdout and stderr of the command the file
+        :param out_file: if not None, write the gcc_which"Destdout and stderr of the command the file
         :type out_file: str
 
         :param out_str: if not None, append the stdout and stderr string to this list
@@ -411,6 +412,7 @@ class ShellHelpers:
             else:
                 stdin = open(stdin_path, 'r')
             # https://stackoverflow.com/questions/15535240/python-popen-write-to-stdout-and-log-file-simultaneously/52090802#52090802
+            # print("Debug 2", cmd, "stdin", stdin, "stdout", stdout, "stderr", stderr, "env", env)
             with subprocess.Popen(
                 cmd,
                 stdin=stdin,

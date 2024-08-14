@@ -26,6 +26,8 @@ The source code for this page is located at: https://github.com/cirosantilli/lin
 * https://cirosantilli.com/linux-kernel-module-cheat/index-split[]: split header version
 * <<build-the-documentation,build the docs yourself>>
 
+toc::[]
+
 == Getting started
 
 Each child section describes a possible different setup for this repo.

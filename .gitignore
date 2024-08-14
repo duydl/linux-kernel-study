@@ -11,6 +11,7 @@ tmp.*
 *~
 *.gitignore
 gitignore.*
+.vscode
 
 # https://cirosantilli.com/linux-kernel-module-cheat#prebuilt
 /lkmc-*.zip

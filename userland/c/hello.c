@@ -7,5 +7,6 @@
 
 int main(void) {
     puts("hello");
-    return EXIT_SUCCESS;
+    // return EXIT_SUCCESS;
+    while(1);
 }

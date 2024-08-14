@@ -511,8 +511,8 @@ Which components to build. Default: qemu-buildroot
             processor = self.env['host_arch']
             if processor != 'arm':
                 apt_get_pkgs.update({
-                    'gcc-arm-linux-gnueabihf',
-                    'g++-arm-linux-gnueabihf',
+                    'gcc-arm-none-eabi',
+                    # 'g++-arm-linux-gnueabihf',
                 })
             if processor != 'aarch64':
                 apt_get_pkgs.update({

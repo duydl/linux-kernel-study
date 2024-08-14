@@ -59,6 +59,7 @@ Build the baremetal examples with crosstool-NG.
                 self.env['baremetal_syscalls_asm_obj']
             ),
         ]:
+            print("Debug", in_path, out_path)
             self._build_one(
                 in_path=in_path,
                 out_path=out_path,

@@ -1981,6 +1981,11 @@ after configure, e.g. SCons. Usually contains specific targets or other build fl
                                         ]).decode()
                                         cc_flags_after.extend(self.sh.shlex_split(pkg_config_output))
                 os.makedirs(os.path.dirname(out_path), exist_ok=True)
+                
+                # if cc == '/home/ubuntu20_1/Projects_Ubuntu20/linux-kernel-study/out/crosstool-ng/build/default/install/arm/bin/arm-unknown-eabi-gcc':
+                #     cc = "/usr/bin/arm-none-eabi-gcc"
+                ## USE --gcc-which host-baremetal instead
+                    
                 ret = self.sh.run_cmd(
                     (
                         [
